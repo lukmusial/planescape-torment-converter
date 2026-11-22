@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torment-converter"
+version = "0.1.0"
+description = "Convert original Planescape: Torment saves to Planescape: Torment - Enhanced Edition"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Games/Entertainment :: Role-Playing",
+]
+
+[project.scripts]
+torment-convert = "torment_converter.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
