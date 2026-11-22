@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+.DS_Store
+# never commit game data or saves
+*.bif
+*.BIF
+*.key
+*.KEY
+*.gam
+*.GAM
+*.sav
+*.SAV
+*.tlk
